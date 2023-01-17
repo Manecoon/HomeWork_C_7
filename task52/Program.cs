@@ -46,7 +46,8 @@ double SredArifm(int x)
                 result = (result + Convert.ToDouble(array[i, j]));
         }
     }
-    return result / Convert.ToDouble(n);
+    result = result / Convert.ToDouble(n);
+    return Math.Round(result, 1); 
 }
 
 void Itog()

@@ -34,7 +34,7 @@ void Zapros()
     int x = Convert.ToInt32(Console.ReadLine());
     Console.Write("Введите координату столбца: ");
     int y = Convert.ToInt32(Console.ReadLine());
-    if (x >= array.GetLength(0) || y >= array.GetLength(1))
+    if (x >= array.GetLength(0) || x < 0 || y >= array.GetLength(1) || y < 0)
         Console.WriteLine("Элемента не существет. Введите другие координаты.");
     else Console.WriteLine($"Данные ячейки: {array[x, y]}");
 }
